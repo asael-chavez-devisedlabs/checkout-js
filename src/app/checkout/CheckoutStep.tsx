@@ -7,8 +7,7 @@ import { isMobileView, MobileView } from '../ui/responsive';
 
 import CheckoutStepHeader from './CheckoutStepHeader';
 import CheckoutStepType from './CheckoutStepType';
-
-import TiloForm from '../payment/Tilo';
+import TiloForm from './Tilo';
 
 export interface CheckoutStepProps {
     heading?: ReactNode;
