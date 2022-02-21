@@ -131,6 +131,9 @@ export default class CheckoutStep extends Component<CheckoutStepProps, CheckoutS
                             className="checkout-view-content"
                             ref={ this.contentRef }
                         >
+                            <div className="checkout-tilo-payment">
+                                <a href="#">Pay with Tilo</a>
+                            </div>
                             { children }
                         </div>
                     </CSSTransition>;
