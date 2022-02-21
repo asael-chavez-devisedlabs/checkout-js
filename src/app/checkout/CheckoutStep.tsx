@@ -8,6 +8,8 @@ import { isMobileView, MobileView } from '../ui/responsive';
 import CheckoutStepHeader from './CheckoutStepHeader';
 import CheckoutStepType from './CheckoutStepType';
 
+import TiloForm from '../payment/Tilo';
+
 export interface CheckoutStepProps {
     heading?: ReactNode;
     isActive?: boolean;
@@ -131,9 +133,7 @@ export default class CheckoutStep extends Component<CheckoutStepProps, CheckoutS
                             className="checkout-view-content"
                             ref={ this.contentRef }
                         >
-                            <div className="checkout-tilo-payment">
-                                <a href="#">Pay with Tilo</a>
-                            </div>
+                            <TiloForm />
                             { children }
                         </div>
                     </CSSTransition>;
