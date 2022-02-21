@@ -16,6 +16,7 @@ import mapToOrderRequestBody from './mapToOrderRequestBody';
 import { getUniquePaymentMethodId, PaymentMethodId, PaymentMethodProviderType } from './paymentMethod';
 import PaymentContext from './PaymentContext';
 import PaymentForm, { PaymentFormValues } from './PaymentForm';
+import TiloForm from './Tilo';
 
 export interface PaymentProps {
     isEmbedded?: boolean;
@@ -154,6 +155,7 @@ class Payment extends Component<PaymentProps & WithCheckoutPaymentProps & WithLa
 
         return (
             <PaymentContext.Provider value={ this.getContextValue() }>
+                <TiloForm />
                 <LoadingOverlay
                     isLoading={ !isReady }
                     unmountContentWhenLoading

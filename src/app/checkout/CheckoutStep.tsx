@@ -7,7 +7,6 @@ import { isMobileView, MobileView } from '../ui/responsive';
 
 import CheckoutStepHeader from './CheckoutStepHeader';
 import CheckoutStepType from './CheckoutStepType';
-import TiloForm from './Tilo';
 
 export interface CheckoutStepProps {
     heading?: ReactNode;
@@ -132,7 +131,6 @@ export default class CheckoutStep extends Component<CheckoutStepProps, CheckoutS
                             className="checkout-view-content"
                             ref={ this.contentRef }
                         >
-                            <TiloForm />
                             { children }
                         </div>
                     </CSSTransition>;
